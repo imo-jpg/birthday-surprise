@@ -7,6 +7,27 @@ body {
 
 #container {
     position: relative;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+
+    }
+
+    #title {
+      height: 50vh;
+    }
+
+    #title h1 {
+        padding-top: 5%;
+    }
+}
+
+.step:first-of-type {
+    margin-top: 25%;
 }
 
 #title {
@@ -24,6 +45,7 @@ body {
 #title h1 {
     padding-top: 15%;
     margin: 0;
+    word-spacing: -3rem;
     font-size: 15rem;
     line-height: 10rem;
 }
@@ -119,8 +141,9 @@ article {
     /* color: #ff5600; */
     color: #252E6A;
     font-size: 5rem;
-
 }
+
+
 
 #text {
     font-size: 3rem;

@@ -2,19 +2,21 @@ let container = d3.select("#container");
 let figure = container.select("figure");
 let title = d3.select("#title");
 let article = container.select("article");
+// let dodah = d3.select("#Dodah")._groups;
+// console.log(dodah);
 
 // initiate the scrollama
 let scroller = scrollama();
+
+
 
 init();
 
 async function init() {
 
     let data = await d3.csv("three_things.csv");
-    console.log(data);
 
     for (let j = 0; j < data.length; j++) {
-        console.log("onestep");
         article.append("div");
         let list = d3.selectAll("div")._groups[0];
         
@@ -26,10 +28,8 @@ async function init() {
 
     let step = article.selectAll(".step");
     let divs = step._groups[0];
-    console.log(divs);
 
     for (let i = 0; i < divs.length; i++) {
-        console.log(divs[i]);
         divs[i].textContent = (data[i].person);
     }
 
@@ -46,16 +46,15 @@ async function init() {
         let thingOne = data[response.index].thingOne;
         let thingTwo = data[response.index].thingTwo;
         let thingThree = data[response.index].thingThree;
-        console.log(thingOne);
+
+        let id = data[response.index].person;
 
         figure.select("p").text(`${thingOne}, ${thingTwo}, ${thingThree}`);
+        figure.select("p").attr("id", `${id}`);
 
     })
     .onStepExit(response => {
         // { element, index, direction }
     });
-
-    // setup resize event
-    window.addEventListener("resize", scroller.resize);
 }
 
