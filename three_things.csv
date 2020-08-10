@@ -1,12 +1,15 @@
-person,thingOne,thingTwo,thingThree
-Eva,bread,puzzles,scrabble
-Maira,latkes,tea time,teasing me for my feet being very small
-Emily,bread,family,cute clogs/crocs
-Matt & Mike,cat butts,bread,"NYT crossword, ginger margaritas"
-Danny,english muffins,sourdough,beans
-Dodah,"Like her mother, Anita is always ready to toast something. Cheers!","Despite some technical challenges, she managed to make some masks and generously shared them.","Anita turned me on to BEANS which led to my buying an Instant Pot and an immersion blender. And many more beans."
-Andrea,kind, soft and content,a very proud mom
-Melanie,sweet smile,soft-spoken, makes great baked goods
-Ralph,"Bruce Springsteen, the boss, Schloss Ringberg and the bedroom in which [redacted]","tireless wordsmith, Friday evening cocktails and enchiladas, Schloss Nymphenburg and a huge tasty turkey","Anita aka Ol blue eyes, pregnancy, hormones and macho movies"
-Amy,friend,caring,generous
-Annika & Peter,the wheels on the bus go round and round,gin and tonic on the beach at Usedom,BMW
+person,thingOne,thingTwo,thingThree,footnoteOne
+Eva,bread,puzzles,scrabble, 
+Maira,latkes,tea time,teasing me for my feet being very small, 
+Emily,bread,family,cute clogs/crocs, 
+Matt & Mike,cat butts,bread,"NYT crossword, ginger margaritas", 
+Danny,english muffins,sourdough,beans, 
+Dodah,"Like her mother, Anita is always ready to toast something. Cheers!","Despite some technical challenges, she managed to make some masks and generously shared them.","Anita turned me on to BEANS which led to my buying an Instant Pot and an immersion blender. And many more beans.", 
+Andrea,kind, soft and content,a very proud mom, 
+Melanie,sweet smile,soft-spoken, makes great baked goods, 
+Valph,"Bruce Springsteen, the boss, Schloss Ringberg and the bedroom in which [redacted]","tireless wordsmith, Friday evening cocktails and enchiladas, Schloss Nymphenburg and a huge tasty turkey","Anita aka Ol blue eyes, pregnancy, hormones and macho movies", 
+Amy,friend,caring,generous, 
+Annika,the wheels on the bus go round and round,gin and tonic on the beach at Usedom,BMW,where Imo and Djuna met
+Nana,mother,daughter (in law),friend,
+Sandy,cookbooks,Pfingstrosen,baseball (Red Sox),
+Diana,wine,friendship,food,

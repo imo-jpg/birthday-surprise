@@ -2,13 +2,9 @@ let container = d3.select("#container");
 let figure = container.select("figure");
 let title = d3.select("#title");
 let article = container.select("article");
-// let dodah = d3.select("#Dodah")._groups;
-// console.log(dodah);
 
 // initiate the scrollama
 let scroller = scrollama();
-
-
 
 init();
 
@@ -33,6 +29,9 @@ async function init() {
         divs[i].textContent = (data[i].person);
     }
 
+   
+
+
     scroller
     .setup({
         step: "#container article .step",
@@ -47,14 +46,33 @@ async function init() {
         let thingTwo = data[response.index].thingTwo;
         let thingThree = data[response.index].thingThree;
 
+        let footnoteOne = data[response.index].footnoteOne;
+
         let id = data[response.index].person;
 
         figure.select("p").text(`${thingOne}, ${thingTwo}, ${thingThree}`);
         figure.select("p").attr("id", `${id}`);
 
+        figure.select("#extra").text(footnoteOne);
+
+
+        // let Annika = d3.select("#Annika")._groups[0][0];
+
+        // Annika.addEventListener("mouseover", function() {
+        //     console.log("hovered");
+        //     d3.select("#extraAnnika").classed("show", true);
+        // })
+        // Annika.addEventListener("mouseout", function() {
+        //     d3.select("#extraAnnika").classed("show", false);
+        // })
+
+
+        
+
     })
     .onStepExit(response => {
-        // { element, index, direction }
+        // figure.select("#extraAnnika").classed("show", false);
+
     });
 }
 
