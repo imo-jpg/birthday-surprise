@@ -19,7 +19,6 @@ async function init() {
         for (let k = 0; k < list.length; k++) {
             list[k].classList.add("step");
         }
-
     }
 
     let step = article.selectAll(".step");
@@ -28,9 +27,6 @@ async function init() {
     for (let i = 0; i < divs.length; i++) {
         divs[i].textContent = (data[i].person);
     }
-
-   
-
 
     scroller
     .setup({
@@ -42,37 +38,19 @@ async function init() {
         step.classed("is-active", function(d, i) {
             return i === response.index;
         })
+
         let thingOne = data[response.index].thingOne;
         let thingTwo = data[response.index].thingTwo;
         let thingThree = data[response.index].thingThree;
-
-        let footnoteOne = data[response.index].footnoteOne;
-
         let id = data[response.index].person;
 
         figure.select("p").text(`${thingOne}, ${thingTwo}, ${thingThree}`);
         figure.select("p").attr("id", `${id}`);
 
-        figure.select("#extra").text(footnoteOne);
-
-
-        // let Annika = d3.select("#Annika")._groups[0][0];
-
-        // Annika.addEventListener("mouseover", function() {
-        //     console.log("hovered");
-        //     d3.select("#extraAnnika").classed("show", true);
-        // })
-        // Annika.addEventListener("mouseout", function() {
-        //     d3.select("#extraAnnika").classed("show", false);
-        // })
-
-
-        
-
+        //let footnoteOne = data[response.index].footnoteOne;
+        // figure.select("#extra").text(footnoteOne);
     })
     .onStepExit(response => {
-        // figure.select("#extraAnnika").classed("show", false);
-
     });
 }
 
