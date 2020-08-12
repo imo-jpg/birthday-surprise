@@ -1,3 +1,5 @@
+
+
 body {
     font-family: "IBM Plex Mono", monospace;
     margin: 0;
@@ -8,22 +10,6 @@ body {
 #container {
     position: relative;
     margin-bottom: 10%;
-}
-
-@media (max-width: 600px) {
-
-    body {
-        overflow-x: hidden;
-
-    }
-
-    #title {
-      height: 50vh;
-    }
-
-    #title h1 {
-        padding-top: 5%;
-    }
 }
 
 .step:first-of-type {
@@ -69,13 +55,13 @@ span {
     z-index: 2;
     width: 100%; 
     position: relative;
-    font-size: 3rem;
     color: #3C6DF0;
     background-color: #FED500;
 }
 
 #intro p {
-    width: 50%;
+    font-size: 3rem;
+    width: 70%;
     margin: auto;
     padding: 5rem 0;
 }
@@ -119,13 +105,6 @@ figure p {
     color: #fed500;
 }
 
-/* .holder {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: auto;
-} */
-
 article {
     margin: 0 auto;
     position: relative;
@@ -138,15 +117,8 @@ article {
     margin: auto;
     text-align: center;
     font-style: italic;
-    /* color: #ff5600; */
     color: #252E6A;
     font-size: 5rem;
-}
-
-
-
-#text {
-    font-size: 3rem;
 }
 
 .is-active {
@@ -167,8 +139,69 @@ article {
     padding: 3rem 0;
 }
 
-#extra {
-    font-size: 1rem;
-    top: 80%;
-    width: 20%;
+@media screen and (max-width: 1024px) {
+    figure p {
+        font-size: 2rem;
+    }
+
+    #title h1 {
+        font-size: 12rem;
+        line-height: 15rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #title {
+        top: -40px;
+        height: 80vh;
+    }
+
+    #title h1 {
+        padding-top: 10%;
+        word-spacing: -2rem;
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    
+    sup {
+        vertical-align: text-top;
+        font-size: 1.5rem;
+    }
+    
+    span {
+        vertical-align: text-top;
+        font-size: 1rem;
+    }
+
+    header {
+        height: 30px;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    #intro p {
+        font-size: 1.25rem;
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+    }
+
+    figure p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .step {
+        font-size: 3rem;
+    }
+
+    #footer p {
+        font-size: .75rem;
+        font-style: italic;
+        padding: 1.5rem;
+    }
 }

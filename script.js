@@ -47,8 +47,6 @@ async function init() {
         figure.select("p").text(`${thingOne}, ${thingTwo}, ${thingThree}`);
         figure.select("p").attr("id", `${id}`);
 
-        //let footnoteOne = data[response.index].footnoteOne;
-        // figure.select("#extra").text(footnoteOne);
     })
     .onStepExit(response => {
     });
