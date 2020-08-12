@@ -193,6 +193,10 @@ article {
         padding: 3rem 0;
     }
 
+    figure {
+        top: 15%;
+    }
+
     figure p {
         font-size: 1.5rem;
         width: 80%;

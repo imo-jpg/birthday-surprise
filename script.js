@@ -32,7 +32,7 @@ async function init() {
     .setup({
         step: "#container article .step",
         offset: 0.85,
-        debug: true
+        debug: false
     })
     .onStepEnter(response => {
         step.classed("is-active", function(d, i) {
