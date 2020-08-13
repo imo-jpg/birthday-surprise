@@ -31,7 +31,7 @@ async function init() {
     scroller
     .setup({
         step: "#container article .step",
-        offset: 1,
+        offset: .75,
         debug: false
     })
     .onStepEnter(response => {

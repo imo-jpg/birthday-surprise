@@ -57,13 +57,14 @@ span {
     position: relative;
     color: #3C6DF0;
     background-color: #FED500;
+    padding: 5rem 0;
 }
 
 #intro p {
     font-size: 3rem;
     width: 70%;
     margin: auto;
-    padding: 5rem 0;
+    padding-top: 1.5rem;
 }
 
 header {
@@ -97,7 +98,7 @@ figure p {
     position: absolute;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 60%;
     top: 30%;
     left: 50%;
@@ -148,6 +149,10 @@ article {
         font-size: 12rem;
         line-height: 15rem;
     }
+
+    .step {
+        height: 600px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -182,11 +187,15 @@ article {
         font-size: 1.25rem;
     }
 
+    #intro {
+        padding: 3rem 0;
+    }
+
     #intro p {
         font-size: 1.25rem;
         width: 80%;
         margin: auto;
-        padding: 3rem 0;
+        padding-top: .75rem;
     }
 
     figure {
@@ -204,6 +213,7 @@ article {
     }
 
     .step {
+        height: 500px;
         font-size: 3rem;
     }
 
